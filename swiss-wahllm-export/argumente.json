@@ -1,0 +1,346 @@
+{
+  "quelle": "Erläuterungen des Bundesrates zur Volksabstimmung vom 29. November 2026 (Bundeskanzlei, Redaktionsschluss 26.08.2026)",
+  "hinweis": "Argumenttexte sind nicht enthalten. Sie stehen im Abstimmungsbüchlein auf den angegebenen Seiten.",
+  "argumente": [
+    {
+      "arg_id": "AHV-P1",
+      "vorlage": "ahv",
+      "vorlage_titel": "Bundesbeschluss über die Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwertsteuer",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "AHV auch für künftige Generationen",
+      "seite_pdf": 22,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "AHV-P2",
+      "vorlage": "ahv",
+      "vorlage_titel": "Bundesbeschluss über die Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwertsteuer",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Dringender Handlungsbedarf",
+      "seite_pdf": 22,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "AHV-P3",
+      "vorlage": "ahv",
+      "vorlage_titel": "Bundesbeschluss über die Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwertsteuer",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Stabilität der AHV erhalten",
+      "seite_pdf": 22,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "AHV-P4",
+      "vorlage": "ahv",
+      "vorlage_titel": "Bundesbeschluss über die Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwertsteuer",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Ausgewogene Finanzierung",
+      "seite_pdf": 22,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "AHV-P5",
+      "vorlage": "ahv",
+      "vorlage_titel": "Bundesbeschluss über die Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwertsteuer",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Soziale Lösung",
+      "seite_pdf": 23,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "AHV-P6",
+      "vorlage": "ahv",
+      "vorlage_titel": "Bundesbeschluss über die Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwertsteuer",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Beitrag für die soziale Sicherheit",
+      "seite_pdf": 23,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "EP-C1",
+      "vorlage": "ehepaar",
+      "vorlage_titel": "Volksinitiative «Ja zu fairen Bundessteuern auch für Ehepaare – Diskriminierung der Ehe endlich abschaffen!»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Individualbesteuerung angenommen",
+      "seite_pdf": 46,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "EP-C2",
+      "vorlage": "ehepaar",
+      "vorlage_titel": "Volksinitiative «Ja zu fairen Bundessteuern auch für Ehepaare – Diskriminierung der Ehe endlich abschaffen!»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Steuerliche Ungleichbehandlung",
+      "seite_pdf": 46,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "EP-C3",
+      "vorlage": "ehepaar",
+      "vorlage_titel": "Volksinitiative «Ja zu fairen Bundessteuern auch für Ehepaare – Diskriminierung der Ehe endlich abschaffen!»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Initiative schafft Unsicherheiten",
+      "seite_pdf": 46,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "EP-C4",
+      "vorlage": "ehepaar",
+      "vorlage_titel": "Volksinitiative «Ja zu fairen Bundessteuern auch für Ehepaare – Diskriminierung der Ehe endlich abschaffen!»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Schwächere Erwerbsanreize",
+      "seite_pdf": 46,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "EP-C5",
+      "vorlage": "ehepaar",
+      "vorlage_titel": "Volksinitiative «Ja zu fairen Bundessteuern auch für Ehepaare – Diskriminierung der Ehe endlich abschaffen!»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Schlechtere Gleichstellung",
+      "seite_pdf": 47,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "EP-C6",
+      "vorlage": "ehepaar",
+      "vorlage_titel": "Volksinitiative «Ja zu fairen Bundessteuern auch für Ehepaare – Diskriminierung der Ehe endlich abschaffen!»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Gefahr von hohen Mindereinnahmen",
+      "seite_pdf": 47,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "EP-P1",
+      "vorlage": "ehepaar",
+      "vorlage_titel": "Volksinitiative «Ja zu fairen Bundessteuern auch für Ehepaare – Diskriminierung der Ehe endlich abschaffen!»",
+      "seite": "pro",
+      "quelle": "Initiativkomitee",
+      "titel": "Modernität",
+      "seite_pdf": 44,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "EP-P2",
+      "vorlage": "ehepaar",
+      "vorlage_titel": "Volksinitiative «Ja zu fairen Bundessteuern auch für Ehepaare – Diskriminierung der Ehe endlich abschaffen!»",
+      "seite": "pro",
+      "quelle": "Initiativkomitee",
+      "titel": "Gerechtigkeit",
+      "seite_pdf": 44,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "EP-P3",
+      "vorlage": "ehepaar",
+      "vorlage_titel": "Volksinitiative «Ja zu fairen Bundessteuern auch für Ehepaare – Diskriminierung der Ehe endlich abschaffen!»",
+      "seite": "pro",
+      "quelle": "Initiativkomitee",
+      "titel": "Einfachheit",
+      "seite_pdf": 44,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-C1",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Bestehende Regeln genügen",
+      "seite_pdf": 32,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-C2",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Brauchtum bewahren",
+      "seite_pdf": 32,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-C3",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Bedrohte Branche",
+      "seite_pdf": 32,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-C4",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Umgehung des Verbots",
+      "seite_pdf": 32,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-C5",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "contra",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Übertriebener Eingriff",
+      "seite_pdf": 33,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-P1",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "pro",
+      "quelle": "Initiativkomitee",
+      "titel": "Der private Gebrauch von Feuerwerk ist aus dem Ruder gelaufen",
+      "seite_pdf": 30,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-P2",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "pro",
+      "quelle": "Initiativkomitee",
+      "titel": "Heim-, Nutz- und Wildtiere geraten in Angst und Panik",
+      "seite_pdf": 30,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-P3",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "pro",
+      "quelle": "Initiativkomitee",
+      "titel": "Sicherheit und Gesundheit für Jung und Alt",
+      "seite_pdf": 30,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-P4",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "pro",
+      "quelle": "Initiativkomitee",
+      "titel": "Feuerwerk generiert Abfall und schadet der Natur",
+      "seite_pdf": 31,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "FW-P5",
+      "vorlage": "feuerwerk",
+      "vorlage_titel": "Volksinitiative «Für eine Einschränkung von Feuerwerk»",
+      "seite": "pro",
+      "quelle": "Initiativkomitee",
+      "titel": "Jetzt klare nationale Regelung schaffen",
+      "seite_pdf": 31,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "KMG-C1",
+      "vorlage": "kmg",
+      "vorlage_titel": "Änderung des Bundesgesetzes über das Kriegsmaterial (Kriegsmaterialgesetz, KMG)",
+      "seite": "contra",
+      "quelle": "Referendumskomitee",
+      "titel": "Bewährtes Gesetz radikal geschwächt",
+      "seite_pdf": 56,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "KMG-C2",
+      "vorlage": "kmg",
+      "vorlage_titel": "Änderung des Bundesgesetzes über das Kriegsmaterial (Kriegsmaterialgesetz, KMG)",
+      "seite": "contra",
+      "quelle": "Referendumskomitee",
+      "titel": "Schweizer Waffen für Unrechtsregime",
+      "seite_pdf": 56,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "KMG-C3",
+      "vorlage": "kmg",
+      "vorlage_titel": "Änderung des Bundesgesetzes über das Kriegsmaterial (Kriegsmaterialgesetz, KMG)",
+      "seite": "contra",
+      "quelle": "Referendumskomitee",
+      "titel": "Schweizer Waffen bei Terrorgruppen",
+      "seite_pdf": 56,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "KMG-C4",
+      "vorlage": "kmg",
+      "vorlage_titel": "Änderung des Bundesgesetzes über das Kriegsmaterial (Kriegsmaterialgesetz, KMG)",
+      "seite": "contra",
+      "quelle": "Referendumskomitee",
+      "titel": "Ukraine wird nicht unterstützt",
+      "seite_pdf": 57,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "KMG-C5",
+      "vorlage": "kmg",
+      "vorlage_titel": "Änderung des Bundesgesetzes über das Kriegsmaterial (Kriegsmaterialgesetz, KMG)",
+      "seite": "contra",
+      "quelle": "Referendumskomitee",
+      "titel": "Neutralität nimmt Schaden",
+      "seite_pdf": 57,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "KMG-P1",
+      "vorlage": "kmg",
+      "vorlage_titel": "Änderung des Bundesgesetzes über das Kriegsmaterial (Kriegsmaterialgesetz, KMG)",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Glaubwürdigkeit wahren",
+      "seite_pdf": 58,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "KMG-P2",
+      "vorlage": "kmg",
+      "vorlage_titel": "Änderung des Bundesgesetzes über das Kriegsmaterial (Kriegsmaterialgesetz, KMG)",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Rüstungsindustrie erhalten",
+      "seite_pdf": 58,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "KMG-P3",
+      "vorlage": "kmg",
+      "vorlage_titel": "Änderung des Bundesgesetzes über das Kriegsmaterial (Kriegsmaterialgesetz, KMG)",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Sicherheit stärken",
+      "seite_pdf": 58,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    },
+    {
+      "arg_id": "KMG-P4",
+      "vorlage": "kmg",
+      "vorlage_titel": "Änderung des Bundesgesetzes über das Kriegsmaterial (Kriegsmaterialgesetz, KMG)",
+      "seite": "pro",
+      "quelle": "Bundesrat und Parlament",
+      "titel": "Vertrauen festigen",
+      "seite_pdf": 59,
+      "text_pruefung": "Wörtlich gegen PDF geprüft"
+    }
+  ]
+}

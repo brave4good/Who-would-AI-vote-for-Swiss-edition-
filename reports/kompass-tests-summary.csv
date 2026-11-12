@@ -1,0 +1,31 @@
+vorlage,profil,profilname,saldo,ja_anteil_berechnet,ja_anteil_nadel,abweichung,anzeige_beobachtet,anzeige_berechnet
+neutralitaet,1,Klares Ja,24,100.0,100,0.0,JA,JA
+neutralitaet,2,Klares Nein,-24,0.0,0,0.0,NEIN,NEIN
+neutralitaet,3,Moderates Ja,12,75.0,75,0.0,JA,JA
+neutralitaet,4,Moderates Nein,-12,25.0,25,0.0,NEIN,NEIN
+neutralitaet,5,Unentschieden,0,50.0,50,0.0,UNENTSCHIEDEN,UNENTSCHIEDEN
+neutralitaet,6,Alles überzeugt,0,50.0,50,0.0,UNENTSCHIEDEN,UNENTSCHIEDEN
+neutralitaet,7,Nichts überzeugt,0,50.0,50,0.0,UNENTSCHIEDEN,UNENTSCHIEDEN
+neutralitaet,8,Alles «eher»,0,50.0,50,0.0,UNENTSCHIEDEN,UNENTSCHIEDEN
+neutralitaet,9,Ja mit Verständnis für Gegner,6,62.5,62.5,0.0,JA,JA
+neutralitaet,10,Nein mit Verständnis für Befürworter,-6,37.5,37.5,0.0,NEIN,NEIN
+neutralitaet,11,Nur Pro-Seite überzeugt,12,75.0,75,0.0,JA,JA
+neutralitaet,12,Nur Contra-Seite überzeugt,-12,25.0,25,0.0,NEIN,NEIN
+neutralitaet,13,Knappster Ja-Ausschlag,1,52.1,52.1,0.0,JA,JA
+neutralitaet,14,Knappster Nein-Ausschlag,-1,47.9,47.9,0.0,NEIN,NEIN
+neutralitaet,15,"Zufall (LCG, Seed 42)",7,64.6,64.6,0.0,JA,JA
+ernaehrung,1,Klares Ja,24,100.0,100,0.0,JA,JA
+ernaehrung,2,Klares Nein,-24,0.0,0,0.0,NEIN,NEIN
+ernaehrung,3,Moderates Ja,12,75.0,75,0.0,JA,JA
+ernaehrung,4,Moderates Nein,-12,25.0,25,0.0,NEIN,NEIN
+ernaehrung,5,Unentschieden,0,50.0,50,0.0,UNENTSCHIEDEN,UNENTSCHIEDEN
+ernaehrung,6,Alles überzeugt,0,50.0,50,0.0,UNENTSCHIEDEN,UNENTSCHIEDEN
+ernaehrung,7,Nichts überzeugt,0,50.0,50,0.0,UNENTSCHIEDEN,UNENTSCHIEDEN
+ernaehrung,8,Alles «eher»,0,50.0,50,0.0,UNENTSCHIEDEN,UNENTSCHIEDEN
+ernaehrung,9,Ja mit Verständnis für Gegner,6,62.5,62.5,0.0,JA,JA
+ernaehrung,10,Nein mit Verständnis für Befürworter,-6,37.5,37.5,0.0,NEIN,NEIN
+ernaehrung,11,Nur Pro-Seite überzeugt,12,75.0,75,0.0,JA,JA
+ernaehrung,12,Nur Contra-Seite überzeugt,-12,25.0,25,0.0,NEIN,NEIN
+ernaehrung,13,Knappster Ja-Ausschlag,1,52.1,52.1,0.0,JA,JA
+ernaehrung,14,Knappster Nein-Ausschlag,-1,47.9,47.9,0.0,NEIN,NEIN
+ernaehrung,15,"Zufall (LCG, Seed 42)",-11,27.1,27.1,0.0,NEIN,NEIN

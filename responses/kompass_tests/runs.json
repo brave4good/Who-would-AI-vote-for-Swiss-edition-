@@ -1,0 +1,2182 @@
+{
+  "schema_version": 1,
+  "experiment_id": "srf-abstimmungskompass-2026-09-27",
+  "quelle": "https://www.srf.ch/news/schweiz/pro-kontra-zu-den-vorlagen-interaktiver-abstimmungskompass-welche-argumente-ueberzeugen-sie-1",
+  "quelle_veroeffentlicht": "2026-09-12",
+  "abstimmung": "2026-09-27",
+  "durchgefuehrt_am": "2026-11-11",
+  "durchfuehrung": "Claude (Anthropic) über Claude in Chrome; Klicks per JavaScript auf die Bewertungsknöpfe des Widgets",
+  "skala": {
+    "Sehr": 2,
+    "eher": 1,
+    "weiss nicht": 0,
+    "eher nicht": -1,
+    "Gar nicht": -2
+  },
+  "messgroesse": "ja_anteil_nadel: Winkel der Tachonadel, 0 % = ganz rechts (Nein), 100 % = ganz links (Ja), auf 0,1 Prozentpunkte gerundet",
+  "argumenttexte": "nicht enthalten (SRF-Inhalte); erfasst ist nur Seite und Bewertung in Anzeigereihenfolge",
+  "vorlagen": {
+    "neutralitaet": "Volksinitiative «Wahrung der schweizerischen Neutralität (Neutralitätsinitiative)»",
+    "ernaehrung": "Ernährungsinitiative"
+  },
+  "runs": [
+    {
+      "vorlage": "neutralitaet",
+      "profil": 1,
+      "profilname": "Klares Ja",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 100,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 2,
+      "profilname": "Klares Nein",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 0,
+      "reihenfolge": null,
+      "bewertungen_ohne_reihenfolge": {
+        "pro": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2
+        ],
+        "contra": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "hinweis": "Reihenfolge nicht protokolliert; Bewertung je Seite durch das Profil eindeutig festgelegt."
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 3,
+      "profilname": "Moderates Ja",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 75,
+      "reihenfolge": null,
+      "bewertungen_ohne_reihenfolge": {
+        "pro": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "contra": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "hinweis": "Reihenfolge nicht protokolliert; Bewertung je Seite durch das Profil eindeutig festgelegt."
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 4,
+      "profilname": "Moderates Nein",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 25,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 5,
+      "profilname": "Unentschieden",
+      "status": "evaluable",
+      "anzeige": "UNENTSCHIEDEN",
+      "ja_anteil_nadel": 50,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 6,
+      "profilname": "Alles überzeugt",
+      "status": "evaluable",
+      "anzeige": "UNENTSCHIEDEN",
+      "ja_anteil_nadel": 50,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 7,
+      "profilname": "Nichts überzeugt",
+      "status": "evaluable",
+      "anzeige": "UNENTSCHIEDEN",
+      "ja_anteil_nadel": 50,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 8,
+      "profilname": "Alles «eher»",
+      "status": "evaluable",
+      "anzeige": "UNENTSCHIEDEN",
+      "ja_anteil_nadel": 50,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 9,
+      "profilname": "Ja mit Verständnis für Gegner",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 62.5,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 10,
+      "profilname": "Nein mit Verständnis für Befürworter",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 37.5,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 11,
+      "profilname": "Nur Pro-Seite überzeugt",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 75,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 12,
+      "profilname": "Nur Contra-Seite überzeugt",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 25,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 13,
+      "profilname": "Knappster Ja-Ausschlag",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 52.1,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 14,
+      "profilname": "Knappster Nein-Ausschlag",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 47.9,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "neutralitaet",
+      "profil": 15,
+      "profilname": "Zufall (LCG, Seed 42)",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 64.6,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 1,
+      "profilname": "Klares Ja",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 100,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 2,
+      "profilname": "Klares Nein",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 0,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 3,
+      "profilname": "Moderates Ja",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 75,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 4,
+      "profilname": "Moderates Nein",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 25,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 5,
+      "profilname": "Unentschieden",
+      "status": "evaluable",
+      "anzeige": "UNENTSCHIEDEN",
+      "ja_anteil_nadel": 50,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 6,
+      "profilname": "Alles überzeugt",
+      "status": "evaluable",
+      "anzeige": "UNENTSCHIEDEN",
+      "ja_anteil_nadel": 50,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 7,
+      "profilname": "Nichts überzeugt",
+      "status": "evaluable",
+      "anzeige": "UNENTSCHIEDEN",
+      "ja_anteil_nadel": 50,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 8,
+      "profilname": "Alles «eher»",
+      "status": "evaluable",
+      "anzeige": "UNENTSCHIEDEN",
+      "ja_anteil_nadel": 50,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 9,
+      "profilname": "Ja mit Verständnis für Gegner",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 62.5,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 10,
+      "profilname": "Nein mit Verständnis für Befürworter",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 37.5,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 11,
+      "profilname": "Nur Pro-Seite überzeugt",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 75,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 12,
+      "profilname": "Nur Contra-Seite überzeugt",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 25,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 13,
+      "profilname": "Knappster Ja-Ausschlag",
+      "status": "evaluable",
+      "anzeige": "JA",
+      "ja_anteil_nadel": 52.1,
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 14,
+      "profilname": "Knappster Nein-Ausschlag",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 47.9,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        }
+      ]
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 15,
+      "profilname": "Zufall (LCG, Seed 42)",
+      "status": "evaluable",
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 27.1,
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 0,
+          "label": "weiss nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -2,
+          "label": "Gar nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 2,
+          "label": "Sehr"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        }
+      ]
+    }
+  ],
+  "discarded_runs": [
+    {
+      "vorlage": "ernaehrung",
+      "profil": 3,
+      "status": "needle_not_settled",
+      "reihenfolge": [
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": -1,
+          "label": "eher nicht"
+        }
+      ],
+      "anzeige": "JA",
+      "ja_anteil_nadel": 50,
+      "hinweis": "Nadel vor Ende der Animation ausgelesen; Textanzeige korrekt. Lauf wiederholt."
+    },
+    {
+      "vorlage": "ernaehrung",
+      "profil": 4,
+      "status": "needle_not_settled",
+      "reihenfolge": [
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        },
+        {
+          "seite": "pro",
+          "bewertung": -1,
+          "label": "eher nicht"
+        },
+        {
+          "seite": "contra",
+          "bewertung": 1,
+          "label": "eher"
+        }
+      ],
+      "anzeige": "NEIN",
+      "ja_anteil_nadel": 50,
+      "hinweis": "Nadel vor Ende der Animation ausgelesen; Textanzeige korrekt. Lauf wiederholt."
+    }
+  ]
+}
