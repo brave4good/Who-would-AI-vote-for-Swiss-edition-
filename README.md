@@ -1,85 +1,34 @@
 # Who would AI vote for? Swiss edition
 
-Abstimmungskompasse helfen beim Sortieren von Argumenten. Doch was misst so ein
-Kompass eigentlich? Und was käme heraus, wenn Sprachmodelle ihn ausfüllen? Das
-wollen wir für die Schweiz herausfinden, angeregt durch Jan Koßmanns
-[Berlin WahLLM](https://wahl.ksmn.dev/en/), der acht Sprachmodelle je 15-mal
-den Berliner Wahl-O-Mat beantworten liess.
+Wie würden Sprachmodelle über Schweizer Vorlagen abstimmen? Und wie viel
+Unsicherheit steckt hinter einer scheinbar klaren KI-Antwort? Angeregt durch
+Jan Koßmanns [Berlin WahLLM](https://wahl.ksmn.dev/en/), der acht Sprachmodelle
+je 15-mal den Berliner Wahl-O-Mat beantworten liess, haben wir dieselben acht
+Modelle die Argumente zur eidgenössischen Volksabstimmung vom 29. November 2026
+bewerten lassen.
 
-> **Keine Abstimmungsempfehlung:** Hier geht es darum, wie Werkzeuge und
-> Modelle Bewertungen in Ergebnisse übersetzen. Die Resultate sind weder
-> politische Haltungen noch eine Empfehlung für Stimmberechtigte.
+> **Keine Abstimmungsempfehlung:** Hier geht es darum, wie Modelle Argumente
+> bewerten und daraus eine Stimme ableiten. Die Resultate sind weder politische
+> Haltungen noch eine Empfehlung für Stimmberechtigte.
 
-## Wo stehen wir?
+Die Ergebnisse als Website mit Grafiken:
+[Deutsch](https://brave4good.com/llms-ueberraschende-wahl/) ·
+[English](https://brave4good.com/llms-surprising-choice/)
 
-**Schritt 1, erledigt:** Wir haben die Rechenlogik des interaktiven
-[Abstimmungskompasses von SRF](https://www.srf.ch/news/schweiz/pro-kontra-zu-den-vorlagen-interaktiver-abstimmungskompass-welche-argumente-ueberzeugen-sie-1)
-zur Abstimmung vom 27. September 2026 entschlüsselt. Dafür haben wir 15
-Testprofile auf beide Vorlagen angewendet, die Neutralitätsinitiative und die
-Ernährungsinitiative. Macht 30 Durchläufe und 360 Klicks. Geklickt hat ein
-Skript, nicht wir.
+## Worum es geht
 
-**Schritt 2, erledigt:** Acht Sprachmodelle haben die Argumente aus dem
-Abstimmungsbüchlein des Bundesrates zur Abstimmung vom 29. November 2026
-bewertet, je 15-mal pro Vorlage. Das sind 480 auswertbare Läufe, durchgeführt
-am 12. November 2026 mit denselben Modellen und Einstellungen wie Berlin
-WahLLM. Die Ergebnisse stehen unten unter «Was haben die Modelle geantwortet?».
+Acht Sprachmodelle haben die Argumente aus dem Abstimmungsbüchlein des
+Bundesrates zu allen vier Vorlagen bewertet, je 15-mal pro Vorlage und jedes Mal
+in einer neuen Unterhaltung. Pro Argument gaben sie an, wie sehr es sie
+überzeugt und wie wichtig es ihnen ist, am Ende ihre Stimme. Das sind 480
+auswertbare Läufe, durchgeführt am 12. November 2026 mit denselben Modellen und
+Einstellungen wie Berlin WahLLM. Alle Modellaufrufe zusammen kosteten rund 7.65
+US-Dollar.
 
-## Wie rechnet der Kompass?
+## Wie wir rechnen: Gewicht vor Anzahl
 
-Der Kompass zeigt 12 Argumente je Vorlage, 6 von den Befürworter:innen und 6
-von den Gegner:innen. Jede Bewertung zählt +2 («Sehr»), +1 («eher»), 0
-(«weiss nicht»), −1 («eher nicht») oder −2 («Gar nicht»). Daraus wird:
-
-```text
-Ja-Anteil = 50 + 50 × (Σ Pro − Σ Contra) / 24
-```
-
-Über 50 % heisst es «Sie tendieren zu JA», unter 50 % «zu NEIN», bei genau
-50 % «Sie sind unentschieden». Die Formel erklärt alle 30 Durchläufe ohne
-Abweichung. Beide Vorlagen rechnet der Kompass identisch.
-
-| Nr. | Profil | Pro | Contra | Neutralität | Ernährung |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Klares Ja | ++ | −− | JA 100 % | JA 100 % |
-| 2 | Klares Nein | −− | ++ | NEIN 0 % | NEIN 0 % |
-| 3 | Moderates Ja | + | − | JA 75 % | JA 75 % |
-| 4 | Moderates Nein | − | + | NEIN 25 % | NEIN 25 % |
-| 5 | Unentschieden | ? | ? | unentschieden 50 % | unentschieden 50 % |
-| 6 | Alles überzeugt | ++ | ++ | unentschieden 50 % | unentschieden 50 % |
-| 7 | Nichts überzeugt | −− | −− | unentschieden 50 % | unentschieden 50 % |
-| 8 | Alles «eher» | + | + | unentschieden 50 % | unentschieden 50 % |
-| 9 | Ja mit Verständnis für die Gegenseite | ++ | + | JA 62,5 % | JA 62,5 % |
-| 10 | Nein mit Verständnis für die Gegenseite | + | ++ | NEIN 37,5 % | NEIN 37,5 % |
-| 11 | Nur Pro-Seite überzeugt | ++ | ? | JA 75 % | JA 75 % |
-| 12 | Nur Contra-Seite überzeugt | ? | ++ | NEIN 25 % | NEIN 25 % |
-| 13 | Knappster Ja-Ausschlag | ein +, sonst ? | ? | JA 52,1 % | JA 52,1 % |
-| 14 | Knappster Nein-Ausschlag | ? | ein +, sonst ? | NEIN 47,9 % | NEIN 47,9 % |
-| 15 | Zufall (Seed 42) | zufällig | zufällig | JA 64,6 % | NEIN 27,1 % |
-
-++ Sehr · + eher · ? weiss nicht · − eher nicht · −− Gar nicht
-
-## Was fällt beim SRF-Kompass auf?
-
-- **Der Kompass misst den Saldo, nicht die Überzeugung.** «Alles überzeugt»,
-  «nichts überzeugt», «alles eher» und «weiss nicht» landen alle bei
-  «unentschieden».
-- **Ein einziges «eher» kippt die Anzeige.** Bei sonst neutralen Antworten
-  zeigt der Kompass dann eine Tendenz, obwohl die Nadel nur 2,1
-  Prozentpunkte ausschlägt.
-- **Der Text kennt drei Stufen.** 52 % und 100 % lauten beide
-  «Sie tendieren zu JA». Den Unterschied zeigt nur die Nadel.
-- **Jedes Argument zählt gleich viel.** Die Reihenfolge mischt der Kompass
-  bei jedem Durchlauf neu; sie ändert das Ergebnis nicht.
-
-Für Schritt 2 heisst das: Ein Modell, das allen Argumenten höflich zustimmt,
-erscheint als «unentschieden». Diese Antworten werten wir deshalb getrennt aus,
-statt sie im Mittelwert verschwinden zu lassen.
-
-## Gewicht vor Anzahl
-
-Für Schritt 2 nutzen wir die Argumente aus dem Abstimmungsbüchlein des
-Bundesrates. Dort haben die Seiten nicht gleich viele Argumente: Bei der
+Aus den Bewertungen eines Laufs berechnen wir einen Ja-Anteil. Im
+Abstimmungsbüchlein haben die Seiten nicht gleich viele Argumente, bei der
 Ehepaarbesteuerung etwa 3 gegen 6. Eine Summe würde die Seite mit mehr
 Argumenten bevorzugen. Deshalb bekommt jedes Argument zusätzlich ein Gewicht
 von 1 («Nebensache») bis 3 («entscheidend»), und wir vergleichen den
@@ -90,59 +39,124 @@ Seitenwert = Σ (Bewertung × Gewicht) / Σ Gewicht
 Ja-Anteil  = 50 + 50 × (Seitenwert Pro − Seitenwert Contra) / 4
 ```
 
-So zählt, wie stark und wie wichtig die Argumente sind, nicht wie viele es
-gibt. Bei 6 gegen 6 Argumenten ohne Gewicht ergibt sich genau die SRF-Formel.
-Details und Beispiele stehen in
+Über 50 % liegt ein Lauf im Ja-Bereich, unter 50 % im Nein-Bereich. So zählt,
+wie stark und wie wichtig die Argumente sind, nicht wie viele es gibt. Details
+und Beispiele stehen in
 [`docs/gewichtete-auswertung.md`](docs/gewichtete-auswertung.md).
 
 ## Was haben die Modelle geantwortet?
 
 Jedes Modell hat zu jeder Vorlage alle Argumente bewertet (−2 bis +2),
 gewichtet (1 bis 3) und eine Stimme abgegeben. Die Tabelle zeigt den mittleren
-gewichteten Ja-Anteil aus 15 Läufen und in Klammern, wie oft das Modell «ja»
-gestimmt hat.
+Ja-Anteil aus 15 Läufen und in Klammern die abgegebenen Stimmen.
 
 | Modell | AHV | Feuerwerk | Ehepaar | Kriegsmaterial |
 | --- | --- | --- | --- | --- |
-| Gemini 3.5 Flash Lite | 72 % (15) | 81 % (13) | 20 % (1) | 82 % (13) |
-| Gemma 4 26B | 63 % (11) | 78 % (14) | 60 % (3) | 69 % (5) |
-| GLM 5.3 Flash | 71 % (15) | 85 % (15) | 20 % (0) | 30 % (2) |
-| GPT-5.6 Terra | 65 % (15) | 86 % (15) | 17 % (0) | 40 % (0) |
-| Grok 4.5 | 60 % (8) | 23 % (0) | 21 % (2) | 82 % (13) |
-| Kimi K3 | 68 % (14) | 80 % (15) | 30 % (0) | 56 % (8) |
-| Mistral Medium 3.5 | 71 % (15) | 76 % (15) | 66 % (1) | 22 % (0) |
-| Claude Sonnet 4.6 | 68 % (15) | 32 % (0) | 40 % (0) | 28 % (1) |
+| Gemini 3.5 Flash Lite | 72 % (15 Ja, 0 Nein) | 81 % (13 Ja, 2 Nein) | 20 % (1 Ja, 14 Nein) | 82 % (13 Ja, 2 Nein) |
+| Gemma 4 26B | 63 % (11 Ja, 4 Nein) | 78 % (14 Ja, 1 Nein) | 60 % (3 Ja, 12 Nein) | 69 % (5 Ja, 10 Nein) |
+| GLM 5.3 Flash | 71 % (15 Ja, 0 Nein) | 85 % (15 Ja, 0 Nein) | 20 % (0 Ja, 15 Nein) | 30 % (2 Ja, 13 Nein) |
+| GPT-5.6 Terra | 65 % (15 Ja, 0 Nein) | 86 % (15 Ja, 0 Nein) | 17 % (0 Ja, 15 Nein) | 40 % (0 Ja, 13 Nein, 2 leer) |
+| Grok 4.5 | 60 % (8 Ja, 7 Nein) | 23 % (0 Ja, 15 Nein) | 21 % (2 Ja, 13 Nein) | 82 % (13 Ja, 2 Nein) |
+| Kimi K3 | 68 % (14 Ja, 1 Nein) | 80 % (15 Ja, 0 Nein) | 30 % (0 Ja, 15 Nein) | 56 % (8 Ja, 7 Nein) |
+| Mistral Medium 3.5 | 71 % (15 Ja, 0 Nein) | 76 % (15 Ja, 0 Nein) | 66 % (1 Ja, 14 Nein) | 22 % (0 Ja, 15 Nein) |
+| Claude Sonnet 4.6 | 68 % (15 Ja, 0 Nein) | 32 % (0 Ja, 15 Nein) | 40 % (0 Ja, 15 Nein) | 28 % (1 Ja, 14 Nein) |
 
-Bei der AHV-Vorlage enthält das Büchlein keine Argumente der Gegenseite. Der
-Ja-Anteil kann dort höchstens 75 % erreichen.
+Bei der AHV-Zusatzfinanzierung liegen alle acht Modelle im Ja-Bereich. Bei den
+drei anderen Vorlagen gehen sie auseinander: Bei der Feuerwerksinitiative
+stehen sechs Modelle im Ja-Bereich und zwei im Nein-Bereich, bei der
+Ehepaar-Initiative zwei im Ja- und sechs im Nein-Bereich, beim
+Kriegsmaterialgesetz je vier. Bei der AHV-Vorlage enthält das Büchlein keine
+Argumente der Gegenseite, der Ja-Anteil kann dort höchstens 75 % erreichen.
 
-Was uns auffällt:
+## Bewertung und Stimme sind nicht dasselbe
 
-- **Kompass und Stimme passen nicht immer zusammen.** Mistral kommt bei der
-  Ehepaar-Vorlage im Kompass auf 66 % Ja, stimmt aber 14-mal «nein». Ähnlich,
-  schwächer, bei Gemma (Kriegsmaterial, Ehepaar) und Sonnet (Ehepaar). Bei
-  allen anderen Kombinationen passen Kompass und Stimme in 73 bis 100 % der
-  Läufe.
-- **Manche Modelle schwanken stark.** Gemini, Kimi und Grok beim
-  Kriegsmaterialgesetz und Grok bei der Ehepaar-Vorlage landen mal klar bei
-  Ja, mal klar bei Nein (Standardabweichung 27 bis 33 Prozentpunkte). Ein
-  Mittelwert allein beschreibt das schlecht; die Rohdaten zeigen die Verteilung.
-- **Die Modelle sind sich nicht einig.** Bei der AHV-Vorlage liegen alle im
-  Ja-Bereich, bei den anderen drei Vorlagen gehen sie auseinander.
+In jedem Lauf gibt ein Modell zwei Dinge ab: Bewertungen der Argumente, aus
+denen wir den Ja-Anteil berechnen, und eine Stimme. Passen die beiden zusammen?
 
-Die Zahlen beschreiben das Antwortverhalten unter genau diesem Prompt. Eine
-andere Formulierung, ein Systemprompt oder eine Persona können zu anderen
-Ergebnissen führen. Aufbau, Einstellungen und Abweichungen von Berlin WahLLM
-stehen in [`docs/api-experimente.md`](docs/api-experimente.md), der Prompt in
+**Das erwartbare Bild:** In 27 von 32 Kombinationen aus Modell und Vorlage
+passen Ja-Anteil und Stimme in mindestens drei von vier Läufen zusammen, bei 19
+sogar in allen 15. Wer die Ja-Argumente überzeugender findet, stimmt Ja, wer die
+Nein-Argumente überzeugender findet, stimmt Nein.
+
+**Das Überraschende:** Bei fünf Kombinationen gehen Bewertung und Stimme
+auffällig oft auseinander. Meist zeigt der Ja-Anteil dabei Ja, und das Modell
+stimmt trotzdem Nein.
+
+| Modell | Vorlage | Ja-Anteil im Mittel | Stimmen | Passt in |
+| --- | --- | --- | --- | --- |
+| Mistral Medium 3.5 | Ehepaar-Initiative | 66 % | 1 Ja, 14 Nein | 5 von 15 Läufen |
+| Gemma 4 26B | Kriegsmaterialgesetz | 69 % | 5 Ja, 10 Nein | 8 von 15 Läufen |
+| Gemma 4 26B | Ehepaar-Initiative | 60 % | 3 Ja, 12 Nein | 9 von 15 Läufen |
+| Claude Sonnet 4.6 | Ehepaar-Initiative | 40 % | 0 Ja, 15 Nein | 10 von 15 Läufen |
+| Gemma 4 26B | AHV-Zusatzfinanzierung | 63 % | 11 Ja, 4 Nein | 11 von 15 Läufen |
+
+Warum das so ist, können wir aus den Daten nicht sicher sagen. Eine plausible
+Erklärung: Ein Modell findet einzelne Argumente einleuchtend, gewichtet am Ende
+aber etwas anderes, das im Büchlein gar nicht als Argument steht.
+
+## Einmal fragen ist eine Anekdote
+
+Jedes Modell hat jede Vorlage 15-mal bekommen, mit identischer Frage und neu
+gemischter Reihenfolge der Argumente. Hohe Ja-Anteile heissen Ja, tiefe Nein,
+50 % ist unentschieden.
+
+**Das erwartbare Bild:** Ein Teil der Modelle antwortet sehr stabil. GLM 5.3
+Flash liegt bei der AHV-Vorlage in allen Läufen zwischen 68 und 73 %, GPT-5.6
+Terra bei der Feuerwerksinitiative zwischen 83 und 89 %.
+
+**Das Überraschende:** Bei 10 von 32 Kombinationen liegen mehr als 60
+Prozentpunkte zwischen dem tiefsten und dem höchsten Lauf. Dasselbe Modell
+bewertet dieselben Argumente mal klar als Nein und mal klar als Ja.
+
+| Modell | Vorlage | Spanne des Ja-Anteils | Stimmen |
+| --- | --- | --- | --- |
+| Gemini 3.5 Flash Lite | Kriegsmaterialgesetz | 4 bis 99 % | 13 Ja, 2 Nein |
+| Kimi K3 | Kriegsmaterialgesetz | 10 bis 97 % | 8 Ja, 7 Nein |
+| Grok 4.5 | Ehepaar-Initiative | 2 bis 91 % | 2 Ja, 13 Nein |
+| Mistral Medium 3.5 | Ehepaar-Initiative | 19 bis 94 % | 1 Ja, 14 Nein |
+
+## Das wichtigste Learning
+
+**Eine klare Antwort ist noch keine klare Haltung.** Am Ende gibt jedes Modell
+ein klares Ja oder Nein ab. Die Bewertungen dahinter sind oft deutlich
+vielfältiger: Kimi K3 bewertete das Kriegsmaterialgesetz in 15 Läufen zwischen
+10 und 97 % Ja und stimmte 8-mal Ja und 7-mal Nein.
+
+Wenn wir mit KI arbeiten, sehen wir meist nur eine einzige Antwort. Sie ist ein
+Punkt aus einem ganzen Ergebnisraum, nicht das ganze Bild. KI-Antworten klingen
+oft eindeutiger, als sie sind. Darum lohnt es sich, Ergebnisse relativ zu lesen:
+mehrmals fragen, die Begründung von der Schlussfolgerung trennen und vorsichtig
+bleiben, wenn etwas sehr bestimmt klingt.
+
+## Was dieses Experiment nicht zeigt
+
+- **Keine Empfehlung.** Die Ergebnisse sagen nichts darüber, wie jemand
+  abstimmen sollte. Sie zeigen, wie Modelle unter einer bestimmten Anweisung
+  antworten.
+- **Ein Prompt, eine Sprache.** Alle Fragen liefen auf Deutsch, ohne
+  Systemprompt und ohne Persona. Eine andere Formulierung kann zu anderen
+  Ergebnissen führen.
+- **Ungleiche Vorlagen.** Bei der AHV-Vorlage fehlen im Büchlein die Argumente
+  der Gegenseite, und die Zahl der Argumente pro Seite schwankt zwischen 3 und
+  6. Die Rechnung gleicht das aus, ganz verschwindet es nicht.
+- **Momentaufnahme.** Die Läufe stammen vom 12. November 2026. Modelle und
+  Anbieter ändern sich laufend.
+- **Zwei Abweichungen von Berlin WahLLM.** Kimi K3 lief über einen anderen
+  Anbieter-Zugang, und Mistral Medium 3.5 bekam ein höheres Ausgabelimit.
+  Beides ist in [`docs/api-experimente.md`](docs/api-experimente.md)
+  dokumentiert.
+
+Aufbau, Einstellungen und Abweichungen stehen in
+[`docs/api-experimente.md`](docs/api-experimente.md), der Prompt in
 [`PROMPT.md`](PROMPT.md).
 
 ## Was liegt im Repository?
 
-Schritt 2, Modelle bewerten Argumente:
-
 - [`PROMPT.md`](PROMPT.md): der Prompt in Version v1.
 - [`docs/api-experimente.md`](docs/api-experimente.md): Modelle, Einstellungen,
   Abweichungen von Berlin WahLLM, Status der Läufe, Duplikate und Kosten.
+- [`docs/gewichtete-auswertung.md`](docs/gewichtete-auswertung.md): wie aus den
+  Bewertungen ein Ja-Anteil wird, mit Beispielen.
 - [`docs/argumenttexte.md`](docs/argumenttexte.md): wie die Argumenttexte aus
   dem Büchlein übernommen und wörtlich geprüft wurden.
 - [`data/argumente.json`](data/argumente.json): die 34 Argumente mit Seite,
@@ -152,22 +166,10 @@ Schritt 2, Modelle bewerten Argumente:
 - [`reports/`](reports/): Kennzahlen je Modell und Vorlage
   (`swiss-wahllm-summary.json/.csv`) und je Argument
   (`swiss-wahllm-argumente.csv`).
-- [`n8n/`](n8n/): die zentralen Code-Knoten der n8n-Workflows.
+- [`kompass.py`](kompass.py): die Rechenregel für den gewichteten Ja-Anteil.
 - [`analyze_api_experiments.py`](analyze_api_experiments.py): rechnet jeden
   gezählten Lauf aus seinen Bewertungen nach und prüft die gespeicherten Werte.
-
-Schritt 1, SRF-Kompass:
-
-- [`responses/kompass_tests/runs.json`](responses/kompass_tests/runs.json):
-  Manifest und alle 30 Durchläufe, dazu zwei verworfene mit Begründung.
-- [`docs/kompass-testprofile.md`](docs/kompass-testprofile.md) und
-  [`docs/kompass-versuchsaufbau.md`](docs/kompass-versuchsaufbau.md): Profile,
-  Durchführung und Grenzen des Tests.
-- [`docs/gewichtete-auswertung.md`](docs/gewichtete-auswertung.md): die
-  gewichtete Auswertung, die Schritt 2 verwendet.
-- [`kompass.py`](kompass.py) und
-  [`analyze_kompass_tests.py`](analyze_kompass_tests.py): Rechenlogik und
-  Auswertung.
+- [`n8n/`](n8n/): die zentralen Code-Knoten der n8n-Workflows.
 
 ## Selbst nachrechnen
 
@@ -175,35 +177,21 @@ Du brauchst Python 3.11 oder neuer, sonst nichts.
 
 ```shell
 python3 -m unittest
-python3 analyze_kompass_tests.py
 python3 analyze_api_experiments.py
 ```
 
-Die Tests prüfen, dass je Vorlage 15 Durchläufe mit je 6 Pro- und 6
-Contra-Argumenten vorliegen, dass die Formel jede beobachtete Anzeige
-erklärt und dass die gewichtete Auswertung bei 6 gegen 6 Argumenten dasselbe
-ergibt wie die SRF-Formel. `analyze_api_experiments.py` rechnet jeden
-gezählten Modelllauf aus seinen Bewertungen nach und meldet jede Abweichung
-vom gespeicherten Ja-Anteil.
+Die Tests prüfen die Rechenregel: Extremwerte, dass die Anzahl der Argumente
+keine Rolle spielt, dass Gewichte wirken und dass eine fehlende Seite neutral
+zählt. `analyze_api_experiments.py` rechnet jeden gezählten Modelllauf aus
+seinen Bewertungen nach und meldet jede Abweichung vom gespeicherten Ja-Anteil.
 
 ## Quelle und Abgrenzung
 
-Schritt 2 stützt sich auf die Erläuterungen des Bundesrates zur Abstimmung vom
+Grundlage sind die Erläuterungen des Bundesrates zur Abstimmung vom
 29. November 2026. Die Argumenttexte sind nicht Teil dieses Repositorys.
 Methode und Modellauswahl folgen [Berlin WahLLM](https://wahl.ksmn.dev/en/)
 von Jan Koßmann. Das Projekt ist unabhängig und weder von ihm noch von der
 Bundeskanzlei unterstützt.
-
-### Schritt 1
-
-Grundlage ist der Abstimmungskompass von SRF, veröffentlicht am 12.09.2026.
-Die Argumenttexte gehören SRF und stehen nicht in diesem Repository; wir
-erfassen nur Seite (Befürworter:innen oder Gegner:innen) und Bewertung. Die
-Durchläufe fanden am 11.11.2026 statt, nach der Abstimmung.
-
-Dieses Projekt ist unabhängig. SRF hat es weder erstellt, beauftragt noch
-unterstützt. Während der Tests hat das Widget keine Bewertungen an SRF
-übertragen; die Durchläufe verzerren also keine Statistik.
 
 ## Lizenz
 
